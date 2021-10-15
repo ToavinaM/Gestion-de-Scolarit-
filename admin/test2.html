@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Eleve</title>
+    <!-- <link xmlns="http://www.w3.org/1999/xhtml" rel="icon" id="favicon" href="chrome://global/skin/icons/info.svg" /> -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/myCss.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+        font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="fluid-container">
+        <div class="row">
+            <!-- nav -->
+            <div class="col-md-2">
+                <div id="mySidenav" class="sidenav">
+                    <center>
+                        <h1 style="color: #f1f1f1;">Bonjour</h1>
+                        <h1>Bako</h1>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#"  onclick="closeNav()" >About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                    </center>
+                </div>
+                <center><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></center>
+                <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+        
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            <!-- <-content> -->
+            <div class="col-md-10 bg-warning">
+                <!-- header -->
+                <div class="row">
+                    <div class="col-md-2 bg-warning">
+                        <div class="header">
+                            header
+                        </div>
+                    </div>
+                    <div class="col-md-9 bg-warning">
+                        <div class="header">
+                            header
+                        </div>
+                    </div>
+                    <div class="col-md-1 bg-warning">
+                        <div class="header">
+                            <img src="assets/img/notif.png" width="30px" height="30px" alt="notification" style="margin-left: 20px;">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- real-content -->
+                <div class="row">
+                    <div class="col-md-12 bg-warning">
+                        <h1 style="text-align: center;">Inscription Eleve</h1>
+                        <div class="content">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
